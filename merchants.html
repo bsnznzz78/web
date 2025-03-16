@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchants Directory - AgriGlobal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-earth-americas logo-icon"></i>
+                <span>AgriGlobal</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a>
+            <a href="farmers.html"><i class="fas fa-tractor"></i> Farmers</a>
+            <a href="merchants.html" class="active"><i class="fas fa-shopping-cart"></i> Merchants</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="signup.html" class="btn btn-signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="merchants-page">
+        <div class="merchants-header">
+            <h1>Global Merchants Network</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search merchants by name, products, or location...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select>
+                    <option value="">Business Type</option>
+                    <option value="wholesale">Wholesale</option>
+                    <option value="retail">Retail</option>
+                    <option value="export">Export</option>
+                    <option value="processing">Processing</option>
+                </select>
+                <select>
+                    <option value="">Product Category</option>
+                    <option value="grains">Grains</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="spices">Spices</option>
+                </select>
+                <select>
+                    <option value="">Sort By</option>
+                    <option value="rating">Rating</option>
+                    <option value="trades">Trade Volume</option>
+                    <option value="recent">Recently Active</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="merchants-grid">
+            <div class="merchant-card">
+                <div class="merchant-header">
+                    <div class="merchant-logo">
+                        <img src="images/merchant1.jpg" alt="Global Foods Ltd">
+                    </div>
+                    <div class="merchant-title">
+                        <h3>Global Foods Ltd</h3>
+                        <div class="merchant-badges">
+                            <span class="badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+                            <span class="badge premium"><i class="fas fa-crown"></i> Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="merchant-info">
+                    <div class="merchant-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Mumbai, India</span>
+                    </div>
+                    <div class="merchant-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (250+ reviews)</span>
+                    </div>
+                    <div class="merchant-type">
+                        <i class="fas fa-building"></i>
+                        <span>Wholesale & Export</span>
+                    </div>
+                </div>
+                <div class="merchant-categories">
+                    <h4>Product Categories</h4>
+                    <div class="tags">
+                        <span class="tag">Grains</span>
+                        <span class="tag">Pulses</span>
+                        <span class="tag">Spices</span>
+                    </div>
+                </div>
+                <div class="merchant-stats">
+                    <div class="stat">
+                        <span class="stat-value">5000+</span>
+                        <span class="stat-label">Trades</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">₹50Cr+</span>
+                        <span class="stat-label">Volume</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">25+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+                <div class="merchant-actions">
+                    <button class="btn btn-primary">Contact Merchant</button>
+                    <button class="btn btn-outline">View Profile</button>
+                </div>
+            </div>
+
+            <div class="merchant-card">
+                <div class="merchant-header">
+                    <div class="merchant-logo">
+                        <img src="images/merchant2.jpg" alt="Spice Trade International">
+                    </div>
+                    <div class="merchant-title">
+                        <h3>Spice Trade International</h3>
+                        <div class="merchant-badges">
+                            <span class="badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="merchant-info">
+                    <div class="merchant-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kochi, India</span>
+                    </div>
+                    <div class="merchant-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7 (180+ reviews)</span>
+                    </div>
+                    <div class="merchant-type">
+                        <i class="fas fa-building"></i>
+                        <span>Export Specialist</span>
+                    </div>
+                </div>
+                <div class="merchant-categories">
+                    <h4>Product Categories</h4>
+                    <div class="tags">
+                        <span class="tag">Spices</span>
+                        <span class="tag">Herbs</span>
+                        <span class="tag">Tea</span>
+                    </div>
+                </div>
+                <div class="merchant-stats">
+                    <div class="stat">
+                        <span class="stat-value">3000+</span>
+                        <span class="stat-label">Trades</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">₹30Cr+</span>
+                        <span class="stat-label">Volume</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">15+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+                <div class="merchant-actions">
+                    <button class="btn btn-primary">Contact Merchant</button>
+                    <button class="btn btn-outline">View Profile</button>
+                </div>
+            </div>
+
+            <div class="merchant-card">
+                <div class="merchant-header">
+                    <div class="merchant-logo">
+                        <img src="images/merchant3.jpg" alt="Fresh Harvest Co">
+                    </div>
+                    <div class="merchant-title">
+                        <h3>Fresh Harvest Co</h3>
+                        <div class="merchant-badges">
+                            <span class="badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+                            <span class="badge organic"><i class="fas fa-leaf"></i> Organic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="merchant-info">
+                    <div class="merchant-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore, India</span>
+                    </div>
+                    <div class="merchant-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8 (150+ reviews)</span>
+                    </div>
+                    <div class="merchant-type">
+                        <i class="fas fa-building"></i>
+                        <span>Retail & Distribution</span>
+                    </div>
+                </div>
+                <div class="merchant-categories">
+                    <h4>Product Categories</h4>
+                    <div class="tags">
+                        <span class="tag">Fruits</span>
+                        <span class="tag">Vegetables</span>
+                        <span class="tag">Organic</span>
+                    </div>
+                </div>
+                <div class="merchant-stats">
+                    <div class="stat">
+                        <span class="stat-value">2000+</span>
+                        <span class="stat-label">Trades</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">₹20Cr+</span>
+                        <span class="stat-label">Volume</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5+</span>
+                        <span class="stat-label">Cities</span>
+                    </div>
+                </div>
+                <div class="merchant-actions">
+                    <button class="btn btn-primary">Contact Merchant</button>
+                    <button class="btn btn-outline">View Profile</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn-page"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn-page active">1</button>
+            <button class="btn-page">2</button>
+            <button class="btn-page">3</button>
+            <button class="btn-page"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

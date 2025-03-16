@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - AgriGlobal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-earth-americas logo-icon"></i>
+                <span>AgriGlobal</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="marketplace.html" class="active"><i class="fas fa-store"></i> Marketplace</a>
+            <a href="farmers.html"><i class="fas fa-tractor"></i> Farmers</a>
+            <a href="merchants.html"><i class="fas fa-shopping-cart"></i> Merchants</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="signup.html" class="btn btn-signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="marketplace">
+        <div class="marketplace-header">
+            <h1>Agricultural Marketplace</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select>
+                    <option value="">All Categories</option>
+                    <option value="grains">Grains</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="dairy">Dairy</option>
+                </select>
+                <select>
+                    <option value="">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product1.jpg" alt="Organic Rice">
+                    <span class="product-badge">Organic</span>
+                </div>
+                <div class="product-info">
+                    <h3>Organic Rice</h3>
+                    <div class="product-meta">
+                        <span class="product-location"><i class="fas fa-map-marker-alt"></i> Karnataka, India</span>
+                        <span class="product-rating"><i class="fas fa-star"></i> 4.5</span>
+                    </div>
+                    <p class="product-description">Premium quality organic rice, directly from farmers.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹75/kg</span>
+                        <button class="btn btn-primary">Contact Seller</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product2.jpg" alt="Fresh Apples">
+                    <span class="product-badge">Fresh</span>
+                </div>
+                <div class="product-info">
+                    <h3>Kashmir Apples</h3>
+                    <div class="product-meta">
+                        <span class="product-location"><i class="fas fa-map-marker-alt"></i> Kashmir, India</span>
+                        <span class="product-rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <p class="product-description">Fresh and juicy apples from Kashmir valley.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹180/kg</span>
+                        <button class="btn btn-primary">Contact Seller</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product3.jpg" alt="Organic Vegetables">
+                    <span class="product-badge">Seasonal</span>
+                </div>
+                <div class="product-info">
+                    <h3>Mixed Vegetables</h3>
+                    <div class="product-meta">
+                        <span class="product-location"><i class="fas fa-map-marker-alt"></i> Maharashtra, India</span>
+                        <span class="product-rating"><i class="fas fa-star"></i> 4.3</span>
+                    </div>
+                    <p class="product-description">Fresh seasonal vegetables from local farmers.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹40/kg</span>
+                        <button class="btn btn-primary">Contact Seller</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn-page"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn-page active">1</button>
+            <button class="btn-page">2</button>
+            <button class="btn-page">3</button>
+            <button class="btn-page"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

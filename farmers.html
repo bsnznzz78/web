@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Directory - AgriGlobal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-earth-americas logo-icon"></i>
+                <span>AgriGlobal</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a>
+            <a href="farmers.html" class="active"><i class="fas fa-tractor"></i> Farmers</a>
+            <a href="merchants.html"><i class="fas fa-shopping-cart"></i> Merchants</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="signup.html" class="btn btn-signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="farmers-page">
+        <div class="farmers-header">
+            <h1>Our Farming Community</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search farmers by name or location...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select>
+                    <option value="">All Regions</option>
+                    <option value="north">North India</option>
+                    <option value="south">South India</option>
+                    <option value="east">East India</option>
+                    <option value="west">West India</option>
+                </select>
+                <select>
+                    <option value="">All Products</option>
+                    <option value="grains">Grains</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="spices">Spices</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="farmers-grid">
+            <div class="farmer-card">
+                <div class="farmer-profile">
+                    <div class="farmer-image">
+                        <img src="images/farmer1.jpg" alt="Farmer Rajesh">
+                        <span class="verification-badge" title="Verified Farmer">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                    <h3>Rajesh Kumar</h3>
+                    <div class="farmer-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Punjab, India</span>
+                    </div>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8 (120 reviews)</span>
+                    </div>
+                </div>
+                <div class="farmer-info">
+                    <div class="specialties">
+                        <h4>Specialties</h4>
+                        <div class="tags">
+                            <span class="tag">Organic Wheat</span>
+                            <span class="tag">Rice</span>
+                            <span class="tag">Pulses</span>
+                        </div>
+                    </div>
+                    <p class="farmer-bio">Growing organic grains for over 15 years using traditional farming methods combined with modern sustainable practices.</p>
+                    <div class="farmer-stats">
+                        <div class="stat">
+                            <i class="fas fa-box"></i>
+                            <span>150+ Products</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-handshake"></i>
+                            <span>200+ Trades</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="farmer-footer">
+                    <button class="btn btn-primary">View Profile</button>
+                    <button class="btn btn-outline">Message</button>
+                </div>
+            </div>
+
+            <div class="farmer-card">
+                <div class="farmer-profile">
+                    <div class="farmer-image">
+                        <img src="images/farmer2.jpg" alt="Farmer Lakshmi">
+                        <span class="verification-badge" title="Verified Farmer">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                    <h3>Lakshmi Devi</h3>
+                    <div class="farmer-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Karnataka, India</span>
+                    </div>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (95 reviews)</span>
+                    </div>
+                </div>
+                <div class="farmer-info">
+                    <div class="specialties">
+                        <h4>Specialties</h4>
+                        <div class="tags">
+                            <span class="tag">Coffee</span>
+                            <span class="tag">Spices</span>
+                            <span class="tag">Fruits</span>
+                        </div>
+                    </div>
+                    <p class="farmer-bio">Specializing in premium coffee and spices. Our farm has been certified organic for the past decade.</p>
+                    <div class="farmer-stats">
+                        <div class="stat">
+                            <i class="fas fa-box"></i>
+                            <span>80+ Products</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-handshake"></i>
+                            <span>150+ Trades</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="farmer-footer">
+                    <button class="btn btn-primary">View Profile</button>
+                    <button class="btn btn-outline">Message</button>
+                </div>
+            </div>
+
+            <div class="farmer-card">
+                <div class="farmer-profile">
+                    <div class="farmer-image">
+                        <img src="images/farmer3.jpg" alt="Farmer Amit">
+                        <span class="verification-badge" title="Verified Farmer">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                    <h3>Amit Patel</h3>
+                    <div class="farmer-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gujarat, India</span>
+                    </div>
+                    <div class="farmer-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7 (85 reviews)</span>
+                    </div>
+                </div>
+                <div class="farmer-info">
+                    <div class="specialties">
+                        <h4>Specialties</h4>
+                        <div class="tags">
+                            <span class="tag">Cotton</span>
+                            <span class="tag">Groundnuts</span>
+                            <span class="tag">Vegetables</span>
+                        </div>
+                    </div>
+                    <p class="farmer-bio">Third-generation farmer focusing on sustainable cotton farming and seasonal vegetables.</p>
+                    <div class="farmer-stats">
+                        <div class="stat">
+                            <i class="fas fa-box"></i>
+                            <span>120+ Products</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-handshake"></i>
+                            <span>180+ Trades</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="farmer-footer">
+                    <button class="btn btn-primary">View Profile</button>
+                    <button class="btn btn-outline">Message</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn-page"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn-page active">1</button>
+            <button class="btn-page">2</button>
+            <button class="btn-page">3</button>
+            <button class="btn-page"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
